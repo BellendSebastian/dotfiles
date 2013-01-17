@@ -198,6 +198,10 @@ hi def link coffeeBracket coffeeBlock
 hi def link coffeeCurly coffeeBlock
 hi def link coffeeParen coffeeBlock
 
+syn match coffeeFunction /@\?\I.*\w\+\ze\s*=\s*.*\->/ contains=@coffeeIdentifier display
+ 	 121	
+hi def link coffeeFunction Function
+
 " This is used instead of TOP to keep things coffee-specific for good
 " embedding. `contained` groups aren't included.
 syn cluster coffeeAll contains=coffeeStatement,coffeeRepeat,coffeeConditional,
