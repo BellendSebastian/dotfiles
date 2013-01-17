@@ -33,7 +33,6 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'groenewege/vim-less'
 Bundle 'skammer/vim-css-color'
 Bundle 'mattn/zencoding-vim'
@@ -62,7 +61,6 @@ autocmd VimEnter * NERDTree
 syntax on
 let NERDTreeShowBookmarks=1
 set background=dark
-colorscheme solarized
 set cindent
 set smartindent
 set autoindent
