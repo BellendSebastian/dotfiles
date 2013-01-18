@@ -7,6 +7,12 @@ noremap <F3> <Esc>
 set viminfo^=h
 
 map <F2> :NERDTreeToggle<CR>
+map <C-b> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+  exec "w"
+  exec "!gcc % -o %<"
+  exec "! ./%<"
+endfunc
 
 set mouse=a
 set foldmethod=indent   "fold based on indent
@@ -36,13 +42,15 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'hallettj/jslint.vim'
 
-filetype plugin indent on     " required!
+filetype plugin indent on
 
 autocmd VimEnter * NERDTree
 
 syntax on
 let NERDTreeShowBookmarks=1
+let NERDTreeMapToggleHidden=1
 set background=dark
 set cindent
 set smartindent
