@@ -56,7 +56,7 @@ set cindent
 set smartindent
 set autoindent
 set expandtab
-set tabstop=4
+set tabstop=8
 set shiftwidth=2
 set cinkeys=0{,0},:,0#,!^F
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
