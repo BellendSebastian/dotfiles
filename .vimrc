@@ -43,6 +43,7 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'hallettj/jslint.vim'
+Bundle 'scrooloose/nerdcommenter'
 
 filetype plugin indent on
 
@@ -56,7 +57,7 @@ set cindent
 set smartindent
 set autoindent
 set expandtab
-set tabstop=8
+set tabstop=4
 set shiftwidth=2
 set cinkeys=0{,0},:,0#,!^F
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
