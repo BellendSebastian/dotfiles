@@ -13,7 +13,7 @@ func! CompileRunGcc()
   exec "!gcc % -o %<"
   exec "! ./%<"
 endfunc
-
+set fillchars=vert:\ 
 set mouse=a
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
