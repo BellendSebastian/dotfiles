@@ -7,23 +7,17 @@ noremap <F3> <Esc>
 set viminfo^=h
 
 map <F2> :NERDTreeToggle<CR>
-map <C-b> :call CompileRunGcc()<CR>
-func! CompileRunGcc()
-  exec "w"
-  exec "!gcc % -o %<"
-  exec "! ./%<"
-endfunc
 set fillchars=vert:\ 
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set mouse=a
-set foldmethod=indent   "fold based on indent
-set foldnestmax=10      "deepest fold is 10 levels
-set nofoldenable        "dont fold by default
-set foldlevel=1         "this is just what i use
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
 set guioptions-=T
 
-set nocompatible               " be iMproved
-filetype off                   " required!
-
+set nocompatible
+filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
@@ -44,6 +38,7 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'hallettj/jslint.vim'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 filetype plugin indent on
 
@@ -51,8 +46,8 @@ autocmd VimEnter * NERDTree
 
 syntax on
 let NERDTreeShowBookmarks=1
-let NERDTreeMapToggleHidden=1
 set background=dark
+set ts=2 sw=2 et
 set cindent
 set smartindent
 set autoindent
@@ -63,3 +58,7 @@ set cinkeys=0{,0},:,0#,!^F
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.ftl set filetype=html.ftl
 set hlsearch
+set list listchars=tab:\>\ ,trail:.
+highlight Whitespace cterm=underline gui=underline ctermbg=red guibg=red ctermfg=gray guifg=yellow
+autocmd ColorScheme * highlight Whitespace gui=underline ctermbg=red guibg=red ctermfg=yellow guifg=yellow
+match Whitespace /  \+/
