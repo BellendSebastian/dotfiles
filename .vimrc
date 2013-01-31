@@ -39,6 +39,7 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'hallettj/jslint.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'digitaltoad/vim-jade'
 
 filetype plugin indent on
 
@@ -51,12 +52,13 @@ set ts=2 sw=2 et
 set cindent
 set smartindent
 set autoindent
-set expandtab
 set tabstop=4
-set shiftwidth=2
+set shiftwidth=4
+set expandtab
 set cinkeys=0{,0},:,0#,!^F
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.ftl set filetype=html.ftl
+autocmd BufNewFile,BufRead *.jade set filetype=jade
 set hlsearch
 set list listchars=tab:\>\ ,trail:.
 highlight Whitespace cterm=underline gui=underline ctermbg=red guibg=red ctermfg=gray guifg=yellow
