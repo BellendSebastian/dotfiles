@@ -6,7 +6,7 @@ imap <F3> i
 noremap <F3> <Esc>
 set viminfo^=h
 
-map <F2> :NERDTreeToggle<CR>
+map <TAB> :NERDTreeToggle<CR>
 set fillchars=vert:\ 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set mouse=a
@@ -36,10 +36,10 @@ Bundle 'bronson/vim-trailing-whitespace'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
-Bundle 'hallettj/jslint.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'wookiehangover/jshint.vim'
 
 filetype plugin indent on
 
