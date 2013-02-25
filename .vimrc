@@ -39,7 +39,6 @@ Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'digitaltoad/vim-jade'
 Bundle 'wookiehangover/jshint.vim'
 
 filetype plugin indent on
