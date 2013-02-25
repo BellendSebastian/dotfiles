@@ -68,3 +68,9 @@
 .wine/
 .wireshark-etc/
 .wireshark/
+.af_instances
+.af_token
+.appletviewer
+.filezilla/*
+.jslintrc
+.lighttable/*
