@@ -10,3 +10,4 @@ export PATH=/usr/local/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin:/usr/X1
 alias qm="mvn -DskipTests -DskipITs -Dmaven.test.skip"
 alias gr="git fetch --all; gco master; git reset --hard origin/master"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+echo "SYSTEM WARNING: Tosser has created shell on $TTY"
