@@ -7,6 +7,8 @@
 command! -bar FuckYou call s:fuckYou()
 
 fun s:fuckYou()
+    " Just a bunch of try-catch blocks so I can suppress the default warnings
+    " you get when the regex turns up nothing.
     try
         exe '%s/\t/    /g'
     catch /E486: Pattern not found/
@@ -38,6 +40,7 @@ fun s:fuckYou()
     endtry
 endfun
 
+" Is there really going to be a command called :FuckYou?
 if !exists(":FuckYou")
     nmap <Leader>ig :FuckYou<CR>
 endif
