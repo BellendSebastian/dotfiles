@@ -4,14 +4,40 @@
 " Author: Diquebutte <dickbutt@diquebutte.com>
 " License: a herp a derp
 
-command! -bar FuckYou call s:FuckYou()
+command! -bar FuckYou call s:fuckYou()
 
-function s:FuckYou()
-    exec '%s/\t/    /g'
-    exec '%s/function(/function (/g'
-    exec '%s/){/) {/g'
-    exec '%s/if(/if (/g'
-    exec '%s/\s\+$//g'
-endfunction
+fun s:fuckYou()
+    try
+        exe '%s/\t/    /g'
+    catch /E486: Pattern not found/
+        echo ""
+    endtry
 
-nmap <Leader>ig :FuckYou<CR>
+    try
+        exe '%s/function(/function (/g'
+    catch /E486: Pattern not found/
+        echo ""
+    endtry
+
+    try
+        exe '%s/){/) {/g'
+    catch /E486: Pattern not found/
+        echo ""
+    endtry
+
+    try
+        exe '%s/if(/if (/g'
+    catch /E486: Pattern not found/
+        echo ""
+    endtry
+
+    try
+        exe '%s/\s\+$//g'
+    catch /E486: Pattern not found/
+        echo ""
+    endtry
+endfun
+
+if !exists(":FuckYou")
+    nmap <Leader>ig :FuckYou<CR>
+endif
