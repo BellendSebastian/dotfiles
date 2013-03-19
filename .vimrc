@@ -57,6 +57,7 @@ set shiftwidth=4
 set expandtab
 set cinkeys=0{,0},:,0#,!^F
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
+autocmd BufNewFile,BufRead *.fabfile set filetype=python
 autocmd BufNewFile,BufRead *.ftl set filetype=html.ftl
 autocmd BufNewFile,BufRead *.jade set filetype=jade
 set hlsearch

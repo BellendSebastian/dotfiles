@@ -1,8 +1,8 @@
 ZSH=$HOME/.oh-my-zsh
 unsetopt correct_all
 alias tmux="TERM=screen-256color-bce tmux"
-alias dramasolr='MAVEN_OPTS="-Xmx2g" mvn jetty:run -Djetty.port=20100'
-alias dramaload='MAVEN_OPTS="-Xmx2g" mvn clean package exec:java'
+alias dramasolr='MAVEN_OPTS="-Xmx8g" mvn jetty:run -Djetty.port=20100'
+alias dramaload='MAVEN_OPTS="-Xmx8g" mvn clean package exec:java'
 ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
