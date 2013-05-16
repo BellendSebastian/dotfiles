@@ -11,3 +11,5 @@ alias qm="mvn -DskipTests -DskipITs -Dmaven.test.skip"
 alias gr="git fetch --all; gco master; git reset --hard origin/master"
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 echo "WOLOLOLOLOLOLOLLLLOLOLOOOOLOL $TTY"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"

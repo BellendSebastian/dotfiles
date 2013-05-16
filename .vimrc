@@ -1,9 +1,10 @@
+" set tabstop 2
 set ts=2
+" turn on line numbering
 set nu
+" gvim colours
 set t_Co=256
 
-imap <F3> i
-noremap <F3> <Esc>
 set viminfo^=h
 
 map <TAB> :NERDTreeToggle<CR>
@@ -40,10 +41,12 @@ Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'wookiehangover/jshint.vim'
+Bundle 'airblade/vim-gitgutter'
 
 filetype plugin indent on
 
 autocmd VimEnter * NERDTree
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
 
 syntax on
 let NERDTreeShowBookmarks=1

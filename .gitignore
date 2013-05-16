@@ -74,3 +74,8 @@
 .filezilla/*
 .jslintrc
 .lighttable/*
+.basexhistory
+.gervill/soundbank-emg.sf2
+.macports/history
+.pip/pip.log
+.swp
