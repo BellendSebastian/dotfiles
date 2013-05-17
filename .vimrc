@@ -42,11 +42,21 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 
 autocmd VimEnter * NERDTree
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+
+let g:ctrlp_working_path_mode = 2
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
+let g:ctrlp_by_filename = 1
+let g:ctrlp_use_caching = 0
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_mruf_relative = 1
+let g:ctrlp_dotfiles = 0
+let g:ctrlp_mruf_case_sensitive = 0
 
 syntax on
 let NERDTreeShowBookmarks=1
