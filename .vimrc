@@ -24,25 +24,22 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
 Bundle 'scrooloose/nerdtree'
 Bundle 'groenewege/vim-less'
 Bundle 'skammer/vim-css-color'
-Bundle 'mattn/zencoding-vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'chaquotay/ftl-vim-syntax'
 Bundle 'bronson/vim-trailing-whitespace'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'uggedal/go-vim'
 
 filetype plugin indent on
 
@@ -57,6 +54,7 @@ let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_mruf_relative = 1
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_mruf_case_sensitive = 0
+let g:EclimJavascriptValidate = 0
 
 syntax on
 let NERDTreeShowBookmarks=1
