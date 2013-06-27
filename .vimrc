@@ -1,14 +1,12 @@
-" set tabstop 2
 set ts=2
-" turn on line numbering
 set nu
-" gvim colours
 set t_Co=256
 
 set viminfo^=h
 
 map <TAB> :NERDTreeToggle<CR>
 map <S-TAB> :QFix<CR>
+im <A-Space> <C-x><C-o>
 set fillchars=vert:\ 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set mouse=a
@@ -40,11 +38,13 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'uggedal/go-vim'
+Bundle 'myusuf3/numbers.vim'
 
 filetype plugin indent on
 
 autocmd VimEnter * NERDTree
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType go setlocal noet ts=4 sw=4 omnifunc=syntaxcomplete#Complete
 
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
@@ -56,6 +56,7 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_mruf_case_sensitive = 0
 let g:EclimJavascriptValidate = 0
 
+omnifunc=syntaxcomplete#Complete
 syntax on
 let NERDTreeShowBookmarks=1
 set background=dark
