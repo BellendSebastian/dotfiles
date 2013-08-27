@@ -1,6 +1,7 @@
 set ts=2
 set nu
 set t_Co=256
+set sh=/bin/bash
 
 set viminfo^=h
 
@@ -38,13 +39,12 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'uggedal/go-vim'
-Bundle 'myusuf3/numbers.vim'
+Bundle 'gregsexton/MatchTag'
 
 filetype plugin indent on
 
 autocmd VimEnter * NERDTree
 autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
-autocmd FileType go setlocal noet ts=4 sw=4 omnifunc=syntaxcomplete#Complete
 
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
@@ -59,6 +59,7 @@ let g:EclimJavascriptValidate = 0
 omnifunc=syntaxcomplete#Complete
 syntax on
 let NERDTreeShowBookmarks=1
+let NERDTreeShowLineNumbers=0
 set background=dark
 set ts=2 sw=2 et
 set cindent
@@ -68,6 +69,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set cinkeys=0{,0},:,0#,!^F
+set hi CursorLine   cterm=NONE ctermbg=dimgray ctermfg=white guibg=dimgray guifg=white
+set cursorline
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.fabfile set filetype=python
 autocmd BufNewFile,BufRead *.ftl set filetype=html.ftl
