@@ -56,7 +56,6 @@ let g:ctrlp_dotfiles = 0
 let g:ctrlp_mruf_case_sensitive = 0
 let g:EclimJavascriptValidate = 0
 
-omnifunc=syntaxcomplete#Complete
 syntax on
 let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=0
@@ -69,7 +68,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set cinkeys=0{,0},:,0#,!^F
-set hi CursorLine   cterm=NONE ctermbg=dimgray ctermfg=white guibg=dimgray guifg=white
 set cursorline
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd BufNewFile,BufRead *.fabfile set filetype=python
