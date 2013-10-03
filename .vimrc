@@ -40,6 +40,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'uggedal/go-vim'
 Bundle 'gregsexton/MatchTag'
+Bundle 'leafgarland/typescript-vim'
 
 filetype plugin indent on
 

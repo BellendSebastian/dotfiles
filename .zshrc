@@ -11,7 +11,7 @@ alias qm="mvn -DskipTests -DskipITs -Dmaven.test.skip"
 alias gr="git fetch --all; gco master; git reset --hard origin/master"
 
 export GOPATH=$HOME/go
-export PATH=/Library/Python/2.7/site-packages:/usr/local/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin:/usr/X11/bin:/usr/local/Cellar/go/1.0.3/bin/
+export PATH=/usr/local/share/npm/bin:/Library/Python/2.7/site-packages:/usr/local/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin:/usr/X11/bin:/usr/local/Cellar/go/1.0.3/bin/
 export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 export PATH="$HOME/.rbenv/bin:$PATH"
 
