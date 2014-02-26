@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/gib/Projects/www.semantico.com/wordpress'
-let g:netrw_dirhist_2='/Users/gib/Projects/bloomsbury-drama/frontend'
-let g:netrw_dirhist_3='/Users/gib/Projects/bloomsbury_drama/frontend'
-let g:netrw_dirhist_4='/Users/gib/Projects/bloomsbury_drama'
-let g:netrw_dirhist_5='/Users/gib/Projects/bloomsbury_drama/frontend'
