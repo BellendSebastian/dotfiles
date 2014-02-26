@@ -22,7 +22,7 @@ set t_Co=256		"256 colors
 set sh=/bin/bash	"use bash for internal shell
 set autoindent		"auto indent
 set tabstop=4		"tab stop
-set shiftwidth=4	"
+set shiftwidth=4    "bored with writing comments now
 set expandtab
 let NERDTreeShowBookmarks=1
 let NERDTreeShowLineNumbers=0
