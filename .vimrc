@@ -12,6 +12,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Raimondi/delimitMate'
 
 filetype plugin indent on
 
