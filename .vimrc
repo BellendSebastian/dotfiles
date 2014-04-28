@@ -16,6 +16,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'msanders/snipmate.vim'
 Bundle 'gregsexton/MatchTag'
 Bundle 'heavenshell/vim-jsdoc'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 
@@ -46,6 +47,9 @@ let g:acp_enableAtStartup=0
 let g:neocomplcache_enable_at_startup=1
 let g:neocomplcache_enable_smart_case=1
 let g:neocomplcache_min_syntax_length=3
+
+" CtrlP
+let g:ctrlp_working_path_mode = 'ra'
 
 " Colour guff
 hi NonText guifg=bg ctermfg=bg
