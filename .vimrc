@@ -16,6 +16,8 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'msanders/snipmate.vim'
 Bundle 'gregsexton/MatchTag'
 Bundle 'heavenshell/vim-jsdoc'
+Bundle 'puppetlabs/puppet-syntax-vim'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 
@@ -40,6 +42,8 @@ colorscheme kolor
 set cursorline
 set hlsearch
 set list listchars=tab:\>\ ,trail:.
+set laststatus=2
+set relativenumber
 
 " Neocomplcache stuff
 let g:acp_enableAtStartup=0
